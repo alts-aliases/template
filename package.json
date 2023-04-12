@@ -1,0 +1,37 @@
+{
+  "name": "@alts-aliases/{{package.name}}",
+  "version": "0.0.0",
+  "description": "{{package.description}}",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r prepack",
+    "check": "rome check . --apply-unsafe && rome format . --write",
+    "format": "prettier --write --list-different . --ignore-path .gitignore",
+    "postinstall": "githooks install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alts-aliases/{{package.name}}.git"
+  },
+  "keywords": [
+    "{{package.keywords}}"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alts-aliases/{{package.name}}/issues"
+  },
+  "homepage": "https://github.com/alts-aliases/{{package.name}}#readme",
+  "devDependencies": {
+    "@funish/githooks": "edge",
+    "@funish/githooks-config": "edge",
+    "@funish/lint": "edge",
+    "prettier": "2.8.4",
+    "rome": "12.0.0",
+    "unbuild": "1.2.0"
+  }
+}

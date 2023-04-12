@@ -1,0 +1,30 @@
+{
+  "name": "@alts/{{package.name}}",
+  "version": "0.0.0",
+  "description": "{{package.description}}",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "unbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alts-aliases/{{package.name}}.git"
+  },
+  "keywords": [
+    "{{package.keywords}}"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alts-aliases/{{package.name}}/issues"
+  },
+  "homepage": "https://github.com/alts-aliases/{{package.name}}#readme"
+}
